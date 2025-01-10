@@ -1,0 +1,84 @@
+:root {
+    --cor1: coral;
+    --cor2: red;
+    --cor3: aqua;
+    --cor4: yellow;
+    --cor5: green;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100vh;
+    background-color: var(--cor1);
+    padding-top: 30px;
+    box-shadow: 3px 0 0 var(--cor2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+nav.menu-lateral.expandir{
+    width: 24vw;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-expandir > i{
+    color: white;
+    font-size: 30px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: .4s;
+}
+
+ul li.ativo{
+    background-color: var(--cor2);
+}
+
+ul li.item-menu:hover{
+    background: var(--cor2);
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 30px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px; 
+    margin-left: 20px;  
+}
+
