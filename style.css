@@ -1,44 +1,90 @@
 :root {
-    --cor1: coral;
-    --cor2: red;
-    --cor3: aqua;
-    --cor4: yellow;
-    --cor5: green;
+    --cor1: #3a3132;
+    --cor2: #05d3f8;
+    --cor3: #386dbd;
+    --cor4: #009ddd;
+    --cor5: #0f4571;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 7% 86% auto;
 }
 
-nav.menu-lateral{
+
+header {
+    background-color: var(--cor1);
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+nav {
+    grid-row: 2 / -2;
+}
+
+main {
+    background-color: var(--cor2);
+    grid-column: 2 / -1;
+    padding: 20px; 
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    position: relative;
+    top: 20%;
+}
+
+article {
+    border: solid black 5px;
+    background-color: #D8D0C1;
+    box-sizing: border-box;
+    padding: 2rem;
+    margin: 2rem;
+    height: 5em;
+    width: 200px;
+}
+
+footer {
+    background-color: var(--cor1);
+    grid-column: 1 / -1;
+    grid-row: -2 / -1;
+}
+
+nav.menu-lateral {
     width: 80px;
     height: 100vh;
     background-color: var(--cor1);
     padding-top: 30px;
     box-shadow: 3px 0 0 var(--cor2);
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: fixed; 
     overflow: hidden;
-    transition: .2s;
+    transition: width 0.3s ease; 
+    z-index: 1; 
 }
 
-nav.menu-lateral.expandir{
+nav.menu-lateral.expandir {
     width: 24vw;
 }
 
-.btn-expandir{
+.btn-expandir {
     width: 100%;
     padding-left: 10px;
     margin-bottom: 20px;
 }
 
-.btn-expandir > i{
+.btn-expandir > i {
     color: white;
     font-size: 30px;
     margin-left: 12px;
@@ -48,37 +94,42 @@ nav.menu-lateral.expandir{
 ul {
     height: 100%;
     list-style-type: none;
+    padding: 0;
 }
 
 ul li.item-menu {
-    transition: .4s;
+    transition: background-color 0.4s ease;
 }
 
-ul li.ativo{
+ul li.ativo {
     background-color: var(--cor2);
 }
 
-ul li.item-menu:hover{
-    background: var(--cor2);
+ul li.item-menu:hover {
+    background-color: var(--cor2);
 }
 
-ul li.item-menu a{
+ul li.item-menu a {
     color: white;
     text-decoration: none;
     font-size: 20px;
     padding: 20px 4%;
     display: flex;
-    /* justify-content: flex-start; */
     align-items: center;
     margin-bottom: 20px;
 }
 
-ul li.item-menu a .txt-link{
+ul li.item-menu a .txt-link {
     margin-left: 30px;
+    opacity: 0; 
+    transition: opacity 0.2s ease;
 }
 
-ul li.item-menu a .icon > i{
-    font-size: 30px; 
-    margin-left: 20px;  
+nav.menu-lateral.expandir ul li.item-menu a .txt-link {
+    opacity: 1;
 }
 
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+    margin-left: 20px;
+}
