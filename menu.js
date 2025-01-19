@@ -15,7 +15,7 @@ let btnExp = document.querySelector('#btn-exp'); // Seleciona o botão de expand
 let menu = document.querySelector('.menu-lateral'); // Seleciona o menu lateral
 let body = document.querySelector('body'); // Seleciona o body para controlar o grid
 
-btnExp.addEventListener('click', function() {
+btnExp.addEventListener('click', function () {
     menu.classList.toggle('expandir'); // Alterna a classe 'expandir' no menu
     body.classList.toggle('nav-expandida'); // Alterna a classe 'nav-expandida' no body para ajustar o grid
 });
