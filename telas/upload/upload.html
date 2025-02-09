@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho final Dweb</title>
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="../../../geral.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../geral.css">
+    <link rel="stylesheet" href="../conta/sign-in/style.css">
+    <link rel="stylesheet" href="upload.css">
     <!-- biblioteca de icones: -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -24,19 +25,19 @@
 
         <ul>
             <li class="item-menu">
-                <a href="../../../index.html">
+                <a href="../../index.html">
                     <span class="icon"><i class="bi bi-house-door"></i></span>
                     <span class="txt-link">Home</span>
                 </a>
             </li>
-            <li class="item-menu">
-                <a href="../../upload/upload.html">
+            <li class="item-menu ativo">
+                <a href="./upload.html">
                     <span class="icon"><i class="bi bi-file-arrow-up"></i></span>
                     <span class="txt-link">Arquivo</span>
                 </a>
             </li>
-            <li class="item-menu ativo">
-                <a href="signin.html">
+            <li class="item-menu">
+                <a href="../conta/sign-in/signin.html">
                     <span class="icon"><i class="bi bi-person-circle"></i></span>
                     <span class="txt-link">Login</span>
                 </a>
@@ -46,23 +47,18 @@
 
     <main>
         <section>
-            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" class="formulario">
+            <form id="form">
                 <fieldset>
-                    <h1>Iniciar Sessão</h1><br>
-                    <label for="emailInput">Endereço de email:</label>
-                    <input type="email" name="emailInput" id="emailInput" placeholder="Insira seu email"><br>
-                    <label for="password">Senha:</label>
-                    <input type="password" name="senhaInput" id="senhaInput" placeholder="Insira sua senha">
+                    <label>Nome: <input type="text"></label>
+                    <label>Artista: <input type="text"></label>
+                    <label>Álbum: <input type="text"></label>
+                    <label>Ano de lançamento: <input type="number"></label>
+                    <label>Capa: <input type="file"></label>
+                    <label>Arquivo: <input type="file"></label>
                     <hr><br>
-                    <span class="span-conta">Novo na {nome}? <a href="../sign-up/signup.html">Criar conta</a></span><br>
-                    <input type="submit" value="Iniciar Sessão">
+                    <input type="submit">
                 </fieldset>
             </form>
-
-            <div class="helper">
-                <a href="#">Problemas para iniciar sessão?</a>
-                <span id="resultado"></span>
-            </div>
         </section>
     </main>
 
@@ -70,8 +66,7 @@
         <p>Copyright © - Todos os Direitos Reservados - {Nome do Domínio}</p>
     </footer>
 
-    <script src="../../../menu.js"></script>
-    <script type="module" src="./script.js"></script>
+    <script src="../../menu.js"></script>
 </body>
 
 </html>
