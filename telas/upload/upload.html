@@ -47,14 +47,14 @@
 
     <main>
         <section>
-            <form id="form">
+            <form id="form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
                 <fieldset>
-                    <label>Nome: <input type="text"></label>
-                    <label>Artista: <input type="text"></label>
-                    <label>Álbum: <input type="text"></label>
-                    <label>Ano de lançamento: <input type="number"></label>
-                    <label>Capa: <input type="file"></label>
-                    <label>Arquivo: <input type="file"></label>
+                    <label>Nome: <input type="text" id="nome" class="inpFormulario"></label>
+                    <label>Artista: <input type="text" id="artista" class="inpFormulario"></label>
+                    <label>Álbum: <input type="text" id="album" class="inpFormulario"></label>
+                    <label>Ano de lançamento: <input type="number" id="ano" class="inpFormulario"></label>
+                    <label>Capa: <input type="file" id="capa" class="inpFormulario"></label>
+                    <label>Arquivo: <input type="file" id="arquivo" class="inpFormulario"></label>
                     <hr><br>
                     <input type="submit">
                 </fieldset>
@@ -67,6 +67,7 @@
     </footer>
 
     <script src="../../menu.js"></script>
+    <script type="module" src="./validarUpload.js"></script>
 </body>
 
 </html>
