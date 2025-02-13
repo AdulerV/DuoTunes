@@ -11,7 +11,7 @@ for(const input of inputs) {
 
 form.addEventListener("submit", function (evento) {
     for(const input of inputs) {
-        if (validarEntradas(input)) {
+        if (validarEntradas(input.value)) {
             evento.preventDefault();
             mostrarMensagem();
         }

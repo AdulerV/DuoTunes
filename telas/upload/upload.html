@@ -49,17 +49,21 @@
         <section>
             <form id="form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
                 <fieldset>
-                    <label>Nome: <input type="text" id="nome" class="inpFormulario"></label>
-                    <label>Artista: <input type="text" id="artista" class="inpFormulario"></label>
-                    <label>Álbum: <input type="text" id="album" class="inpFormulario"></label>
-                    <label>Ano de lançamento: <input type="number" id="ano" class="inpFormulario"></label>
-                    <label>Capa: <input type="file" id="capa" class="inpFormulario"></label>
-                    <label>Arquivo: <input type="file" id="arquivo" class="inpFormulario"></label>
+                    <label>Nome: <input type="text" name="nome" class="inpFormulario"></label>
+                    <label>Artista: <input type="text" name="artista" class="inpFormulario"></label>
+                    <label>Álbum: <input type="text" name="album" class="inpFormulario"></label>
+                    <label>Ano de lançamento: <input type="number" name="ano" class="inpFormulario"></label>
+                    <label>Capa: <input type="file" name="capa" class="inpFormulario"></label>
+                    <label>Arquivo: <input type="file" name="arquivo" class="inpFormulario"></label>
                     <hr><br>
                     <input type="submit">
                 </fieldset>
             </form>
         </section>
+
+        <div class="helper">
+            <span id="resultado"></span>
+        </div>
     </main>
 
     <footer>
