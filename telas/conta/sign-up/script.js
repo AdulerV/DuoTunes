@@ -158,3 +158,26 @@ function mostrarMensagem() {
     span.style.padding = "0.5rem";
     span.style.color = "red";
 }
+
+// Script para o Modal
+const modal = document.getElementById("modal");
+const termosLink = document.getElementById("termosLink");
+const closeModalBtn = document.querySelector(".close");
+
+// Abrir modal ao clicar no link de Termos
+termosLink.onclick = function(event) {
+    event.preventDefault(); // Prevenir redirecionamento
+    modal.style.display = "block";
+};
+
+// Fechar modal ao clicar no "x"
+closeModalBtn.onclick = function() {
+    modal.style.display = "none";
+};
+
+// Fechar modal ao clicar fora da área do modal
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
