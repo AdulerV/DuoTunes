@@ -41,7 +41,7 @@ a {
 }
 
 section {
-    margin-top: 2rem;
+    /* margin-top: 2rem; !!!!!!!!!!!!!!!!!!!!!!!     */
     display: flex;
     justify-content: center;
     align-content: center;
