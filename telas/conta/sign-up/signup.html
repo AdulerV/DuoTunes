@@ -49,18 +49,24 @@
             <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" class="formulario">
                 <fieldset>
                     <h1>Iniciar Sessão</h1><br>
+
                     <label for="emailInput">Endereço de email:</label>
-                    <input type="email" name="emailInput" id="emailInput" placeholder="Insira seu email"><br>
+                    <input type="email" name="emailInput" placeholder="Insira seu email" id="emailInput" class="inputFormulario"><br>
+
                     <label for="password">Senha:</label>
-                    <input type="password" name="senhaInput" id="senhaInput" placeholder="Insira sua senha">
+                    <input type="password" name="senhaInput" placeholder="Insira sua senha" id="senhaInput" class="inputFormulario"><br>
+
+                    <label for="confirmaSenhaInput">Confirmar senha:</label>
+                    <input type="password" name="confirmaSenhaInput" placeholder="Repita sua senha" id="confirmaSenhaInput" class="inputFormulario">
+            
                     <hr><br>
-                    <span class="span-conta">Novo na {nome}? <a href="#">Criar conta</a></span><br>
+                    <span class="span-conta">Já tem uma conta? <a href="../sign-in/signin.html">Iniciar Sessão</a></span><br>
                     <input type="submit" value="Iniciar Sessão">
                 </fieldset>
             </form>
 
             <div class="helper">
-                <a href="#">Problemas para iniciar sessão?</a>
+                <a href="#">Termos de Usuário</a>
                 <span id="resultado"></span>
             </div>
         </section>
