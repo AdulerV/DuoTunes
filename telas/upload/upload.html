@@ -50,11 +50,24 @@
             <form id="form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
                 <fieldset>
                     <h1>Fazer upload de música</h1><br>
-                    <label>Nome: <input type="text" name="nome" class="inpFormulario"></label>
-                    <label>Artista: <input type="text" name="artista" class="inpFormulario"></label>
-                    <label>Álbum: <input type="text" name="album" class="inpFormulario"></label>
-                    <label>Ano de lançamento: <input type="number" name="ano" class="inpFormulario"></label>
-                    <label>Capa: <input type="file" name="capa"></label>
+                    <label>Nome: <input type="text" name="nome" class="inpFormulario" placeholder="Insira o nome da música"></label>
+                    <label>Artista: <input type="text" name="artista" class="inpFormulario" placeholder="Insira o nome do artista"></label>
+                    <label>Álbum: <input type="text" name="album" class="inpFormulario" placeholder="Insira o nome do álbum"></label>
+                    <label>Gênero: <select class="inpFormulario" name="genero" form="form" id="selectGenero">
+                        <option selected disabled id="opcaoInicial" value="placeholder">Selecione um gênero</option>
+                        <option value="pop">Pop</option>
+                        <option value="blues">Blues</option>
+                        <option value="jazz">Jazz</option>
+                        <option value="rock">Rock</option>
+                        <option value="rap">Rap</option>
+                        <option value="eletronica">Eletrônica</option>
+                        <option value="mpb">MPB</option>
+                        <option value="samba">Samba</option>
+                        <option value="forro">Forró</option>
+                        <option value="outro">Outro</option>
+                    </select></label>
+                    <label>Ano de lançamento: <input type="number" name="ano" class="inpFormulario" placeholder="Insira o ano de lançamento"></label>
+                    <label>Capa: <input type="file" id="arquivo" name="capa"></label>
                     <label>Arquivo: <input type="file" name="arquivo" class="inpFormulario"></label>
                     <hr><br>
                     <input type="submit">
