@@ -6,7 +6,7 @@ let senha = document.querySelector("#senhaInput");
 let confirmaSenha = document.querySelector("#confirmaSenhaInput");
 
 senha.addEventListener("focus", inicializarValidacaoSenha);
-confirmaSenha.addEventListener("focus", inicializarValidacaoSenha);
+confirmaSenha.addEventListener("focus", inicializarValidacaoConfirmaSenha);
 email.addEventListener("focus", inicializarValidacaoEmail);
 
 function inicializarValidacaoSenha() {
@@ -23,8 +23,6 @@ function inicializarValidacaoSenha() {
 
     senha.addEventListener("click", main);
     senha.addEventListener("keyup", main);
-    confirmaSenha.addEventListener("click", main);
-    confirmaSenha.addEventListener("keyup", main);
 
     function main() {
         mudarCorFonte(contarCaracteres(senha.value), item[0]);
@@ -34,11 +32,28 @@ function inicializarValidacaoSenha() {
     }
 }
 
+function inicializarValidacaoConfirmaSenha() {
+    let criterio = [
+        { descricao: "Senha e confirmação iguais", valida: (senha1, senha2) => (senha1 === senha2 && senha1 !== "") }
+    ];
+
+    gerarLista(criterio);
+
+    let item = document.querySelectorAll(".item");
+
+    confirmaSenha.addEventListener("click", main);
+    confirmaSenha.addEventListener("keyup", main);
+
+    function main() {
+        mudarCorFonte(confirmarSenhas(senha.value, confirmaSenha.value), item[0]);
+    }
+}
+
 function inicializarValidacaoEmail() {
     let criterios = [
-        { descricao: "Pelo menos um arroba", valida: verificarArroba},
-        { descricao: "Ponto após o arroba", valida: verificarPontoPosArroba},
-        { descricao: "Sem espaços em branco", valida: verificarEspacoEmBranco},
+        { descricao: "Pelo menos um arroba", valida: verificarArroba },
+        { descricao: "Ponto após o arroba", valida: verificarPontoPosArroba },
+        { descricao: "Sem espaços em branco", valida: verificarEspacoEmBranco },
     ];
 
     gerarLista(criterios);
@@ -115,7 +130,7 @@ for (const input of inputs) {
 }
 
 form.addEventListener("submit", function (evento) {
-    let validador = true;  
+    let validador = true;
 
     for (const input of inputs) {
         if (validarEntradas(input.value)) {
@@ -128,8 +143,8 @@ form.addEventListener("submit", function (evento) {
     }
 
     if (!validador) {
-        evento.preventDefault(); 
-        mostrarMensagem();  
+        evento.preventDefault();
+        mostrarMensagem();
     }
 });
 
@@ -159,25 +174,4 @@ function mostrarMensagem() {
     span.style.color = "red";
 }
 
-// Script para o Modal
-const modal = document.getElementById("modal");
-const termosLink = document.getElementById("termosLink");
-const closeModalBtn = document.querySelector(".close");
 
-// Abrir modal ao clicar no link de Termos
-termosLink.onclick = function(event) {
-    event.preventDefault(); // Prevenir redirecionamento
-    modal.style.display = "block";
-};
-
-// Fechar modal ao clicar no "x"
-closeModalBtn.onclick = function() {
-    modal.style.display = "none";
-};
-
-// Fechar modal ao clicar fora da área do modal
-window.onclick = function(event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-};

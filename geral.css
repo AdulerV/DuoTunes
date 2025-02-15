@@ -1,10 +1,10 @@
 :root {
-    --cor1: #000000;
-    --cor3: #000e41;
-    --cor2: #0015ff;
-    --cor4: #000c94;
-    --corTexto: #f1f1f1;
-    --corLink: #ae00ff;
+    --cor1: #1d1d1d; /* Um preto suave */
+    --cor2: #4a77ff; /* Um azul médio com menos intensidade */
+    --cor3: #3a5078; /* Azul marinho com tom natural */
+    --cor4: #5b7faf; /* Azul intermediário mais natural */
+    --corTexto: #f5f5f5; /* Um branco um pouco mais suave */
+    --corLink: #9966ff; /* Roxo mais equilibrado e natural para links */
 }
 
 * {
@@ -50,6 +50,10 @@ section {
 
 nav {
     grid-row: 2 / -2;
+}
+
+.helper {
+    background-color: var(--cor5);
 }
 
 main {

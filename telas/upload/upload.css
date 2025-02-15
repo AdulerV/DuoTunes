@@ -5,6 +5,13 @@ input,
     /* color: red; */
 }
 
+.helper {
+    padding: 1rem;
+    color: var(--cor2);
+    font-size: 0.9rem;
+    background-color: var(--cor5);
+}
+
 label {
     font-size: 15px;
 }
