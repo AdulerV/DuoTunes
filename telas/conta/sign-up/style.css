@@ -16,10 +16,88 @@ fieldset,
     border-radius: 15px;
     border: none;
     min-width: 20rem;
-    max-width: 31.25rem; 
+    max-width: 31.25rem;
     max-width: 400px;
     margin: 2rem auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+dialog {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); 
+    width: 80%; 
+    max-width: 600px;
+    background-color: var(--cor3); 
+    padding: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: var(--corTexto);
+    text-align: justify;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+dialog[open] {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+dialog h1 {
+    margin-bottom: 1rem;
+    color: var(--cor2); 
+    font-size: 1.8rem;
+}
+
+dialog h2 {
+    margin: 1rem 0;
+    color: var(--cor4); 
+    font-size: 1.4rem;
+}
+
+dialog p {
+    margin-bottom: 1rem;
+    opacity: 0.85; 
+}
+
+dialog a {
+    color: var(--corLink);
+    text-decoration: underline;
+}
+
+dialog a:hover {
+    color: var(--cor2);
+}
+
+dialog button {
+    background-color: var(--cor4);
+    color: var(--corTexto);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+dialog button:hover {
+    background-color: var(--cor2); 
+}
+
+hr {
+    border: 1px solid var(--cor2);
+    margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 hr {
@@ -61,7 +139,7 @@ label {
     font-weight: bold;
 }
 
-input, #selectGenero {
+input {
     width: 100%;
     height: 2.5rem;
     border-radius: 8px;
@@ -78,7 +156,7 @@ input:focus {
     outline: none;
 }
 
-input[type="submit"] {
+input[type="submit"], #btnDialog {
     width: 100%;
     background-color: var(--cor4);
     color: var(--corTexto);
@@ -91,11 +169,16 @@ input[type="submit"] {
     border-radius: 8px;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, #btnDialog:hover {
     background-color: var(--cor2);
     transform: translateY(-3px);
 }
 
-input[type="submit"]:active {
+input[type="submit"]:active, #btnDialog:active {
     transform: translateY(0);
+}
+
+#btnDialog {
+    width: 80%;
+    height: auto;
 }
