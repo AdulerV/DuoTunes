@@ -1,4 +1,4 @@
-const button = document.querySelector("#btnDialog");
+const button = document.querySelector("#ancoraDialog");
 const btnFecha = document.querySelector("#btnModal");
 const modal = document.querySelector("dialog");
 

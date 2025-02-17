@@ -1,3 +1,5 @@
+
+
 .span-conta {
     font-size: small;
     color: var(--cor5);
@@ -23,16 +25,16 @@ fieldset,
 }
 
 dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 dialog {
     border: none;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); 
-    width: 80%; 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    width: 80%;
     max-width: 600px;
-    background-color: var(--cor3); 
+    background-color: var(--cor3);
     padding: 2rem;
     position: fixed;
     top: 50%;
@@ -44,6 +46,8 @@ dialog {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0;
     visibility: hidden;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 dialog[open] {
@@ -54,19 +58,19 @@ dialog[open] {
 
 dialog h1 {
     margin-bottom: 1rem;
-    color: var(--cor2); 
+    color: var(--cor2);
     font-size: 1.8rem;
 }
 
 dialog h2 {
     margin: 1rem 0;
-    color: var(--cor4); 
+    color: var(--cor4);
     font-size: 1.4rem;
 }
 
 dialog p {
     margin-bottom: 1rem;
-    opacity: 0.85; 
+    opacity: 0.85;
 }
 
 dialog a {
@@ -91,7 +95,7 @@ dialog button {
 }
 
 dialog button:hover {
-    background-color: var(--cor2); 
+    background-color: var(--cor2);
 }
 
 hr {
@@ -156,7 +160,7 @@ input:focus {
     outline: none;
 }
 
-input[type="submit"], #btnDialog {
+input[type="submit"] {
     width: 100%;
     background-color: var(--cor4);
     color: var(--corTexto);
@@ -169,16 +173,12 @@ input[type="submit"], #btnDialog {
     border-radius: 8px;
 }
 
-input[type="submit"]:hover, #btnDialog:hover {
+input[type="submit"]:hover {
     background-color: var(--cor2);
     transform: translateY(-3px);
 }
 
-input[type="submit"]:active, #btnDialog:active {
+input[type="submit"]:active,
+#ancoraDialog:active {
     transform: translateY(0);
-}
-
-#btnDialog {
-    width: 80%;
-    height: auto;
 }
