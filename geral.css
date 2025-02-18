@@ -1,10 +1,10 @@
 :root {
-    --cor1: #1d1d1d; /* Um preto suave */
-    --cor2: #4a77ff; /* Um azul médio com menos intensidade */
-    --cor3: #3a5078; /* Azul marinho com tom natural */
-    --cor4: #5b7faf; /* Azul intermediário mais natural */
-    --corTexto: #f5f5f5; /* Um branco um pouco mais suave */
-    --corLink: #9966ff; /* Roxo mais equilibrado e natural para links */
+    --cor1: #1d1d1d;
+    --cor2: #4a77ff;
+    --cor3: #3a5078;
+    --cor4: #5b7faf;
+    --corTexto: #f5f5f5;
+    --corLink: #9966ff;
 }
 
 * {

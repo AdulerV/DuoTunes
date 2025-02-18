@@ -173,5 +173,3 @@ function mostrarMensagem() {
     span.style.padding = "0.5rem";
     span.style.color = "red";
 }
-
-
