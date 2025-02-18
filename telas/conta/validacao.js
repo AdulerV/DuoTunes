@@ -1,4 +1,4 @@
-export const validarEntradas = (valor) => (valor == "");
+export const validarEntradas = (valor) => (valor == "" || valor == "placeholder");
 
 export function contornarBordaInput(input) {
     if(validarEntradas(input.value)) {

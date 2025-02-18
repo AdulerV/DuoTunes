@@ -33,6 +33,7 @@ p {
 
 h1 {
     color: var(--corTexto);
+    margin: 10px;
 }
 
 a {
