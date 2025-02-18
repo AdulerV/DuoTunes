@@ -175,3 +175,9 @@ ul li.item-menu a .icon>i {
     font-size: 30px;
     margin-left: 20px;
 }
+
+hr {
+    border: 1px solid var(--corTexto);
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
