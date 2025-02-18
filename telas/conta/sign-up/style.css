@@ -99,13 +99,14 @@ dialog button:hover {
 }
 
 hr {
-    border: 1px solid var(--cor2);
+    border: 1px solid var(--corTexto);
     margin-bottom: 1.5rem;
     width: 100%;
 }
 
 hr {
     width: 100%;
+    color: var(--corTexto);
 }
 
 fieldset:hover,

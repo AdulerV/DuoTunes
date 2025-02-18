@@ -22,7 +22,10 @@ fieldset,
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 hr {
+    border: 1px solid var(--corTexto);
+    margin-bottom: 1.5rem;
     width: 100%;
 }
 
