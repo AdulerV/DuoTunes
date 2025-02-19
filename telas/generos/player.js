@@ -16,6 +16,7 @@ elementosMusica.forEach((elemento, indice) => {
         // Atualizando o player com as informações da música
         playerAudio.src = musicaSrc;
         tituloAtualMusica.textContent = tituloMusica;
+        tituloAtualMusica.style.fontWeight = 'bold';
         artistaAtualMusica.textContent = artistaMusica;
 
         // Tocando a música

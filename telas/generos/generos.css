@@ -90,7 +90,9 @@ footer {
     background-color: var(--cor1);
     padding: 10px;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 0;
 }
@@ -98,9 +100,83 @@ footer {
 .player-controles {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    width: 50%;
 }
 
-.player-controles button {
+.player-controles .player-progresso-volume {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.player-controles .player-progresso-volume .volume {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.player-controles .player-progresso-volume .progresso {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.player-controles .player-progresso-volume .progresso #barraProgresso {
+    width: 250px;
+}
+
+.player-controles .player-progresso-volume .progresso #barraProgresso {
+    height: 10px;
+}
+
+.player-controles .player-progresso-volume .progresso input[type='range'], .player-controles .player-progresso-volume .volume input[type='range'] {
+    overflow: hidden;
+    width: 80px;
+    height: 10px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #7c7c7c43;
+    border-radius: 5px;
+}
+
+.player-controles .player-progresso-volume .progresso input[type='range']::-webkit-slider-runnable-track, .player-controles .player-progresso-volume .volume input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+}
+ 
+.player-controles .player-progresso-volume .progresso input[type='range']::-webkit-slider-thumb, .player-controles .player-progresso-volume .volume input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    box-shadow: -900px 0 0 895px #7c7c7c;
+    background: #7c7c7c;
+    border-radius: 100%;
+}
+
+.player-controles .player-progresso-volume .progresso span {
+    white-space: nowrap;
+}
+
+.player-controles .player-progresso-volume .volume {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.player-controles .player-progresso-volume .volume #barraVolume {
+    width: 80px;
+}
+
+.player-controles .player-progresso-volume .volume>i {
+    font-size: 24px;
+}
+
+.player-controles .player-reproducao {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.player-controles .player-reproducao button {
     background: none;
     border: none;
     color: white;
@@ -111,9 +187,9 @@ footer {
 
 .player-musica-informacoes {
     display: flex;
+    align-items: center;
     flex-direction: column;
     max-height: auto;
-    margin-left: 10px;
 }
 
 .player-musica-informacoes span {
