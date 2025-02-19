@@ -33,10 +33,9 @@
     flex-basis: auto;   
     margin: 10px;
     width: 230px;
-    height: 280px;
+    height: 310px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     border-radius: 5px;
     padding: 10px 10px 10px 10px;
     transition: all 0.3s ease;
@@ -59,19 +58,16 @@
     font-size: 62px;
 }
 
-.musica:hover > .musica-img-btn>i {
-    transition: all .2s;
-    visibility: visible;
-    transform: translateY(-28%);
-    opacity: 1;
-  }
-  
 .musica-img-btn>img {
     width: 100%;
+    height: 100%;
 }
 
 .musica span {
     margin-left: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .musica #musica-txt {
@@ -85,6 +81,7 @@
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
 }
 
+<<<<<<< HEAD
 footer {
     position: fixed;
     bottom: 0;
@@ -122,3 +119,17 @@ footer {
 .player-musica-informacoes span {
     font-size: 14px;
 }
+=======
+.musica:hover > .musica-img-btn>i {
+    transition: all .2s;
+    visibility: visible;
+    transform: translateY(-28%);
+    opacity: 1;
+  }
+
+  .musica:hover >  #musica-txt { 
+    white-space: wrap;
+    overflow: visible;
+    text-overflow: unset;
+  }
+>>>>>>> origin/main
