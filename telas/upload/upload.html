@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalho final Dweb</title>
+    <title>Upload</title>
+    <link rel="icon" type="image/x-icon" href="../../imagens/favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link rel="stylesheet" href="../../geral.css">
     <link rel="stylesheet" href="../conta/sign-in/style.css">
@@ -15,7 +16,7 @@
 
 <body>
     <header>
-        <p>{Logo Player}</p>
+        <img src="../../imagens/logo.png" alt="logo do site">
     </header>
 
     <nav class="menu-lateral">
@@ -50,10 +51,10 @@
             <form id="form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
                 <fieldset>
                     <h1>Fazer upload de música</h1><br>
-                    <label>Nome: <input type="text" name="nome" class="inpFormulario" placeholder="Insira o nome da música"></label>
-                    <label>Artista: <input type="text" name="artista" class="inpFormulario" placeholder="Insira o nome do artista"></label>
-                    <label>Álbum: <input type="text" name="album" class="inpFormulario" placeholder="Insira o nome do álbum"></label>
-                    <label>Gênero: <select class="inpFormulario" name="genero" form="form" id="selectGenero">
+                    <label><span class="asterisco">* </span>Nome:<input type="text" name="nome" class="inpFormulario" placeholder="Insira o nome da música"></label>
+                    <label><span class="asterisco">* </span>Artista:<input type="text" name="artista" class="inpFormulario" placeholder="Insira o nome do artista"></label>
+                    <label><span class="asterisco">* </span>Álbum:<input type="text" name="album" class="inpFormulario" placeholder="Insira o nome do álbum"></label>
+                    <label><span class="asterisco">* </span>Gênero:<select class="inpFormulario" name="genero" form="form" id="selectGenero">
                         <option selected disabled id="opcaoInicial" value="placeholder">Selecione um gênero</option>
                         <option value="pop">Pop</option>
                         <option value="blues">Blues</option>
@@ -66,9 +67,9 @@
                         <option value="forro">Forró</option>
                         <option value="outro">Outro</option>
                     </select></label>
-                    <label>Ano de lançamento: <input type="number" name="ano" class="inpFormulario" placeholder="Insira o ano de lançamento"></label>
+                    <label><span class="asterisco">* </span>Ano de lançamento:<input type="number" name="ano" class="inpFormulario" placeholder="Insira o ano de lançamento"></label>
                     <label>Capa: <input type="file" id="arquivo" name="capa" accept="image/*"></label>
-                    <label>Arquivo: <input type="file" name="arquivo" class="inpFormulario" accept="audio/mp3"></label>
+                    <label><span class="asterisco">* </span>Arquivo:<input type="file" name="arquivo" class="inpFormulario" accept="audio/mp3"></label>
                     <hr><br>
                     <input type="submit">
                 </fieldset>
@@ -77,11 +78,11 @@
     </main>
 
     <footer>
-        <p>Copyright © - Todos os Direitos Reservados - {Nome do Domínio}</p>
+        <p>Copyright © - Todos os Direitos Reservados - DuoTunes</p>
     </footer>
 
     <script src="../../menu.js"></script>
-    <script type="module" src="./validarUpload.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 
 </html>

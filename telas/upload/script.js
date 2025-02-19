@@ -1,4 +1,4 @@
-import { validarEntradas, contornarBordaInput } from '../conta/validacao.js';
+import { validarEntradas, contornarBordaInput } from '../scripts/validacao.js';
 
 let inputs = document.querySelectorAll(".inpFormulario");
 const form = document.querySelector("form");

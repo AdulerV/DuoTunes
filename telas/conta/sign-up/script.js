@@ -1,4 +1,4 @@
-import { validarEntradas, contornarBordaInput } from '../validacao.js';
+import { validarEntradas, contornarBordaInput } from '../../scripts/validacao.js';
 
 let inputs = document.querySelectorAll(".inputFormulario");
 let email = document.querySelector("#emailInput");
