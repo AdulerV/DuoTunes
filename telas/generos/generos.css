@@ -84,3 +84,41 @@
     background-color: rgba(0, 0, 0, 0.111);
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor1);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+}
+
+.player-controles {
+    display: flex;
+    align-items: center;
+}
+
+.player-controles button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.player-musica-informacoes {
+    display: flex;
+    flex-direction: column;
+    max-height: auto;
+    margin-left: 10px;
+}
+
+.player-musica-informacoes span {
+    font-size: 14px;
+}
