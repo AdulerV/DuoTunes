@@ -170,11 +170,11 @@
         <div class="player-controles">
             <div class="player-progresso-volume">
                 <div class="progresso">
-                    <input type="range" id="barraProgresso" value="0">
+                    <input type="range" id="barraProgresso" value="0" disabled>
                     <span id="minutagemMusica">&nbsp;--:-- / --:--&nbsp;&nbsp;</span>
                 </div>
                 <div class="volume">
-                    <i class="bi bi-volume-up-fill"></i>
+                    <i class="bi bi-volume-up-fill" id="botao-volume"></i>
                     <input type="range" id="barraVolume">
                 </div>
             </div>
@@ -183,7 +183,6 @@
                 <button id="player-pause-btn"><i class="bi bi-play-fill"></i></button>
                 <button id="proxima-btn"><i class="bi bi-skip-end-fill"></i></button>
             </div>
-        </div>
         </div>
         <audio id="player-audio"></audio>
     </footer>

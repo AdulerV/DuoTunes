@@ -23,6 +23,10 @@ body {
 }
 
 header {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: end;
     grid-column: 1 / -1;
     grid-row: 1;
 }
@@ -90,13 +94,6 @@ main {
 .item-conteudo:hover {
     transform: translateY(-5px);
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
-}
-
-header {
-    position: relative;
-    top: 0;
-    display: flex;
-    justify-content: end;
 }
 
 img {

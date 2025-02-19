@@ -100,6 +100,7 @@ footer {
 .player-controles {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
     width: 50%;
 }
@@ -194,6 +195,14 @@ footer {
 
 .player-musica-informacoes span {
     font-size: 14px;
+}
+
+.progresso {
+    margin-right: 15px;
+}
+
+#barraProgresso {
+    margin-right: 10px;
 }
 
 .musica:hover>.musica-img-btn>i {
