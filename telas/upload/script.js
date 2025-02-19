@@ -14,6 +14,7 @@ form.addEventListener("submit", function (evento) {
         if (validarEntradas(input.value)) {
             evento.preventDefault();
             mostrarMensagem();
+            window.location.href='#resultado';
         }
     }
 });

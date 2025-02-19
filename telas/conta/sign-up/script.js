@@ -145,6 +145,7 @@ form.addEventListener("submit", function (evento) {
     if (!validador) {
         evento.preventDefault();
         mostrarMensagem();
+        window.location.href='#resultado';
     }
 });
 

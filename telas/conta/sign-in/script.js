@@ -19,6 +19,7 @@ form.addEventListener("submit", function (evento) {
     if (emailInvalido || senhaInvalida) {
         evento.preventDefault();
         mostrarMensagem();
+        window.location.href='#resultado';
     }
 });
 
