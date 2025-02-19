@@ -42,6 +42,7 @@
     color: var(--corTexto);
     font-size: 12px;
     cursor: pointer;
+    user-select: none;
 }
 
 .musica-img-btn {
