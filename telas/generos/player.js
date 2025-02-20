@@ -65,7 +65,7 @@ playerAudio.addEventListener('timeupdate', () => {
         const minutosTotais = Math.floor(duracao / 60);
         const segundosTotais = Math.floor(duracao % 60);
 
-        minutagemMusica.textContent = `${formatarTempo(minutosAtuais)}:${formatarTempo(segundosAtuais)} / ${formatarTempo(minutosTotais)}:${formatarTempo(segundosTotais)}`;
+        minutagemMusica.textContent = `${formatarTempo(minutosAtuais)}:${formatarTempo(segundosAtuais)} / ${formatarTempo(minutosTotais)}:${formatarTempo(segundosTotais)} \u00A0\u00A0`;
     }
 });
 

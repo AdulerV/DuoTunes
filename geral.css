@@ -20,15 +20,24 @@ body {
     display: grid;
     grid-template-columns: 80px auto;
     grid-template-rows: 7% 87% auto;
+    background: linear-gradient(180deg, var(--cor4), var(--cor1));
 }
 
 header {
     position: relative;
     top: 0;
     display: flex;
-    justify-content: end;
+    align-items: center;
+    justify-content: flex-end;
     grid-column: 1 / -1;
     grid-row: 1;
+    background-color: var(--cor1);
+}
+
+#logo-site {
+    width: 6vh;
+    object-fit: contain;
+    margin-right: 0.5vw;
 }
 
 p {
@@ -62,7 +71,6 @@ nav {
 }
 
 main {
-    background: linear-gradient(180deg, var(--cor4), var(--cor1));
     grid-column: 2 / -1;
     padding: 20px;
     display: flex;
@@ -102,8 +110,9 @@ img {
 }
 
 header, footer {
-    text-align: end;
-    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     color: var(--corTexto);
     background-color: var(--cor1);
 }
@@ -111,6 +120,8 @@ header, footer {
 footer {
     grid-column: 1 / -1;
     grid-row: -2 / -1;
+    font-size: 2vh;
+    padding-right: 0.5vw;
 }
 
 nav.menu-lateral {

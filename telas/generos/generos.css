@@ -1,3 +1,7 @@
+main {
+    margin-bottom: 50px;
+}
+
 .voltar {
     align-self: flex-start;
     position: fixed;
@@ -103,6 +107,7 @@ footer {
     justify-content: space-evenly;
     flex-direction: column;
     width: 50%;
+    font-size: 14px;
 }
 
 .player-controles .player-progresso-volume {
@@ -128,14 +133,10 @@ footer {
     width: 250px;
 }
 
-.player-controles .player-progresso-volume .progresso #barraProgresso {
-    height: 10px;
-}
-
 .player-controles .player-progresso-volume .progresso input[type='range'], .player-controles .player-progresso-volume .volume input[type='range'] {
     overflow: hidden;
     width: 80px;
-    height: 10px;
+    height: 7px;
     -webkit-appearance: none;
     background-color: transparent;
     border: 1px solid #7c7c7c43;
@@ -143,13 +144,13 @@ footer {
 }
 
 .player-controles .player-progresso-volume .progresso input[type='range']::-webkit-slider-runnable-track, .player-controles .player-progresso-volume .volume input[type='range']::-webkit-slider-runnable-track {
-    height: 10px;
+    height: 7px;
 }
  
 .player-controles .player-progresso-volume .progresso input[type='range']::-webkit-slider-thumb, .player-controles .player-progresso-volume .volume input[type='range']::-webkit-slider-thumb {
-    width: 10px;
+    width: 7px;
     -webkit-appearance: none;
-    height: 10px;
+    height: 7px;
     box-shadow: -900px 0 0 895px #7c7c7c;
     background: #7c7c7c;
     border-radius: 100%;
@@ -169,7 +170,7 @@ footer {
 }
 
 .player-controles .player-progresso-volume .volume>i {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .player-controles .player-reproducao {
@@ -181,7 +182,7 @@ footer {
     background: none;
     border: none;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     margin: 0 10px;
     cursor: pointer;
 }
