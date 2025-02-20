@@ -1,1 +1,3 @@
-# app-musica-dweb
+# DuoTunes
+
+Um player de música destinado à web.
