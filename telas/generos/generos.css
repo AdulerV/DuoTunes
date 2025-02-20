@@ -206,6 +206,10 @@ footer {
     margin-right: 10px;
 }
 
+#botao-volume, #barraProgresso, #barraVolume{
+    cursor: pointer;
+}
+
 .musica:hover>.musica-img-btn>i {
     transition: all .2s;
     visibility: visible;
