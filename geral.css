@@ -38,6 +38,7 @@ header {
     width: 6vh;
     object-fit: contain;
     margin-right: 0.5vw;
+    margin-left: 0.5vw;
 }
 
 p {
